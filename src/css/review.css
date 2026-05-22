@@ -78,20 +78,19 @@
   margin-top: 0;
 
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .review-btn.prev {
   margin-right: 16px;
 }
 
-.review-btn svg {
-  width: 24px;
-  height: 24px;
-  justify-content: center;
-  align-items: center;
+.review-btn.prev .icon-arrow {
+  transform: rotate(180deg);
 }
 
 .icon-arrow {
-  fill: #080c0c;
-  stroke: #080c0c;
+  display: block;
+  color: #080c0c;
 }
