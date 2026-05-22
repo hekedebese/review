@@ -6,5 +6,5 @@ import{a as n,R as c,S as l,N as u,P as d}from"./assets/vendor-Bv0Dbniy.js";(fun
         <p class="review-author">${i.author}</p>
         </div>
       </li>
-      `).join("");g.insertAdjacentHTML("beforeend",t),v()}function v(){document.querySelectorAll(".review-rating").forEach(t=>{new c(t,{starType:"i",number:5,score:Number(t.dataset.rate),readOnly:!0,starOn:"fa-solid fa-star",starOff:"fa-regular fa-star",starHalf:"fa-solid fa-star-half-stroke",half:!0}).init()})}let w=1;async function h(){const s=await m(w);y(s.feedbacks)}h();new l(".review-swiper",{modules:[u,d],slidesPerView:1,spaceBetween:9,pagination:{el:".review-pagination",clickable:!0,dynamicBullets:!0},navigation:{prevEl:".prev",nextEl:".next"}});
+      `).join("");g.insertAdjacentHTML("beforeend",t),v()}function v(){document.querySelectorAll(".review-rating").forEach(t=>{new c(t,{starType:"i",number:5,score:Number(t.dataset.rate),readOnly:!0,starOn:"fa-solid fa-star",starOff:"fa-regular fa-star",starHalf:"fa-solid fa-star-half-stroke",half:!0}).init()})}let w=1;async function h(){const s=await m(w);y(s.feedbacks),new l(".review-swiper",{modules:[u,d],slidesPerView:1,spaceBetween:9,pagination:{el:".review-pagination",clickable:!0,dynamicBullets:!0},navigation:{prevEl:".prev",nextEl:".next"}})}h();
 //# sourceMappingURL=index.js.map
