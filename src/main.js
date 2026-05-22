@@ -16,8 +16,7 @@ async function init() {
 
   new Swiper('.review-swiper', {
     modules: [Navigation, Pagination],
-    slidesPerView: 1,
-    spaceBetween: 9,
+    spaceBetween: 24,
 
     pagination: {
       el: '.review-pagination',
@@ -28,6 +27,16 @@ async function init() {
     navigation: {
       prevEl: '.prev',
       nextEl: '.next',
+    },
+
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
     },
   });
 }
