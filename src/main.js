@@ -13,23 +13,23 @@ async function init() {
   const responses = await getFeedbacksResponse(page);
 
   createFeedbacks(responses.feedbacks);
+
+  new Swiper('.review-swiper', {
+    modules: [Navigation, Pagination],
+    slidesPerView: 1,
+    spaceBetween: 9,
+
+    pagination: {
+      el: '.review-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+
+    navigation: {
+      prevEl: '.prev',
+      nextEl: '.next',
+    },
+  });
 }
 
 init();
-
-new Swiper('.review-swiper', {
-  modules: [Navigation, Pagination],
-  slidesPerView: 1,
-  spaceBetween: 9,
-
-  pagination: {
-    el: '.review-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  navigation: {
-    prevEl: '.prev',
-    nextEl: '.next',
-  },
-});
