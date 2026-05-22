@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,16 +8,29 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <section class="review">
+      <div class="container">
+        <h2 class="review-title">Відгуки клієнтів</h2>
+        <p class="review-text">
+          Дізнайтеся, що кажуть наші задоволені клієнти...
+        </p>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+        <div class="swiper review-swiper">
+          <ul class="swiper-wrapper review-list"></ul>
+        </div>
 
-    <load src="./partials/footer.html" />
+        <div class="review-controls">
+          <div class="swiper-pagination review-pagination"></div>
 
+          <button class="review-btn prev" type="button">
+            <svg class="icon icon-arrow">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="review-btn next" type="button"></button>
+        </div>
+      </div>
+    </section>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
